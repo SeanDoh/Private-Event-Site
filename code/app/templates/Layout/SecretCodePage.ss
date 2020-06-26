@@ -1,0 +1,4 @@
+$CheckAccess()
+<div>
+  $SecretCodeForm()
+</div>

@@ -1,0 +1,12 @@
+/code/silverstripe-cache/
+/code/.env
+/code/vendor/
+/code/themes/simple/
+/code/_resources/
+/code/public/_resources/
+/code/public/node_modules
+/code/*.log
+/code/public/*.tar
+/code/public/*.tar.gz
+/code/*.sql
+/code/app/_config/recaptcha.yml

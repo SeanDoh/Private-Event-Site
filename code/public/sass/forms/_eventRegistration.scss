@@ -1,0 +1,103 @@
+#EventRegistrationForm_Container{
+  padding: 0 16px;
+  max-width: 550px;
+  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+}
+form[id$="_EventRegistrationForm"]{
+  h2[id$="FormTitle"]{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    padding:10px;
+    font-weight:normal;
+  }
+  h2[id$="FormDate"]{
+    text-align:center;
+    font-size:20px;
+    padding:5px;
+    font-weight:normal;
+  }
+  h2[id$="FormLocation"]{
+    text-align:center;
+    font-size:30px;
+    padding:7.5px;
+    font-weight:normal;
+  }
+  h2[id$="FormMessage"]{
+    text-align:center;
+    font-size:20px;
+    font-weight:normal;
+    line-height:normal;
+  }
+  div[id$="_Holder"]{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:20px 0px 20px 0px;
+    width:100%;
+  }
+  .textarea{
+    display:flex;
+    flex-direction:column;
+  }
+  input.text{
+    width:70%;
+  }
+  div[id$="FoodChoice_Holder"]{
+    display:none;
+  }
+  div[id$="FoodAllergies_Holder"]{
+    display:none;
+  }
+  #PlusOneInfo{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+  }
+  #ContactInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+.Registration_Message{
+  padding:30px;
+  font-size:30px;
+  color:white;
+  background-color: rgba(58, 58, 58, 0.5);
+  box-shadow: 3px 3px 5px rgba(34, 34, 34, 0.5);
+  text-align:center;
+}
+
+#RecaptchaForm_EventRegistrationForm_reCaptchaToken_Holder{
+  display:none;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+  form[id$="_EventRegistrationForm"]{
+    div[id$="_Holder"]{
+      width:100%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  
+}

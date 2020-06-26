@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+    database:
+        image: mariadb:10.5.2
+        volumes:
+            - mariadb-volume:/var/lib/mysql
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+            MYSQL_ROOT_PASSWORD: "rootpwd"
+            
+    php-httpd:
+        #image: php:7.2-apache
+        build:
+            context: ./
+        ports:
+            - 80:80
+        volumes:
+            #- "./DocumentRoot:/var/www/html"
+            #- "./bbbss:/var/www/html"
+            - "./php-httpd/000-default.conf:/etc/apache2/sites-enabled/000-default.conf"
+            - "./php-httpd/php.ini:/usr/local/etc/php/php.ini"
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - 'database:db'
+        ports:
+            - 8081:80
+
+volumes:
+    mariadb-volume:

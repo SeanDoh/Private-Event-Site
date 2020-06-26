@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import "./reset";
+@import "./tinymce";
+@import "./elements/elementalArea";
+@import "./elements/tile";
+@import "./forms/form";
+@import "./forms/secretCodeForm";
+@import "./forms/eventRegistration";
+@import "./pages/eventPage";
+
+body, html{
+  margin: 0;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1{
+  font-size:50px;
+  padding:10px;
+}
+h2{
+  font-size:40px;
+  padding:7.5px;
+}
+h3{
+  font-size:30px;
+  padding:5px;
+}
+h4{
+}
+h5{
+}
+h6{
+}
+p{
+  font-size:20px;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+}
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#MemberLoginForm_LoginForm{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px;
+  color: white;
+  background-color: rgba(58, 58, 58, 0.5);
+  box-shadow: 3px 3px 5px rgba(34, 34, 34, 0.5);
+  border-radius:10px;
+  .btn-toolbar{
+    padding:10px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  #main{
+    min-height: 100vh;
+    width:576px;
+  }
+}
+
+@media (max-width: 393px) { 
+  h1{
+    font-size:30px;
+  }
+  h2{
+    font-size:20px;
+  }
+  h3{
+    font-size:20px;
+  }
+}
+
+
+@media (min-width: 394px) and (max-width: 540px) { 
+  h1{
+    font-size:40px;
+  }
+  h2{
+    font-size:30px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  #main{
+    width:768px;
+  }
+}
+
+@media (max-width: 768px) { 
+  h1{
+  }
+  h2{
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  #main{
+    width:992px;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  #main{
+    width:1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
