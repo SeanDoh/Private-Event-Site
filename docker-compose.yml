@@ -9,7 +9,7 @@ services:
             MYSQL_ALLOW_EMPTY_PASSWORD: "no"
             MYSQL_ROOT_PASSWORD: "rootpwd"
             
-    php-httpd:
+    frontend:
         #image: php:7.2-apache
         build:
             context: ./
