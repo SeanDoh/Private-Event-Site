@@ -21,12 +21,5 @@ services:
             - "./php-httpd/000-default.conf:/etc/apache2/sites-enabled/000-default.conf"
             - "./php-httpd/php.ini:/usr/local/etc/php/php.ini"
 
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        links:
-            - 'database:db'
-        ports:
-            - 8081:80
-
 volumes:
     mariadb-volume:
