@@ -1,4 +1,0 @@
-Meldgaard\SilverStripe\ReCaptcha\Form\RecaptchaField:
-  siteKey: 'KEY_HERE'
-  secretKey: 'KEY_HERE'
-  spamLevel: 50

@@ -1,0 +1,21 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - CustomSiteConfig
+
+SilverStripe\Control\Session:
+  cookie_secure: true
+
+Meldgaard\SilverStripe\ReCaptcha\Form\RecaptchaField:
+  siteKey: '6LfSWN0UAAAAAFckxDxqtMNjltw0J6HRRN1lxzzw'
+  secretKey: '6LfSWN0UAAAAAJ2LUHzVjSEF-Jx4kuQffYNxYQH5'
+  spamLevel: 50
+
+Page:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension
